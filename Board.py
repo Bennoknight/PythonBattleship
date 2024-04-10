@@ -33,6 +33,7 @@ class Board:
             for num in alpha:
                 strToPrint+=num+" "
             print(strToPrint)
+        print("")
     
-    def Attack(self,alpha,num):
-        pass
+    def SpotChange(self,alpha,num,type):
+        self.board[alpha][num]="O"

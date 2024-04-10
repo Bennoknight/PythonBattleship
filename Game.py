@@ -1,4 +1,14 @@
 import Board
+import Ship
+import EnemyAI
 
-stonks = Board.Board(0)
-stonks.PrintBoard()
+win = False
+PlayerShips=[]
+EnemyShips=[]
+
+
+PlayerBoard = Board.Board(0)
+EnemyBoard = Board.Board(1)
+
+PlayerBoard.SpotChange(0,1,"miss")
+PlayerBoard.PrintBoard()
