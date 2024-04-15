@@ -35,5 +35,18 @@ class Board:
             print(strToPrint)
         print("")
     
-    def SpotChange(self,alpha,num,type):
-        self.board[alpha][num]="O"
+    def setSpot(self,alpha,num,type):
+        #types will be: miss, hit, ship and blank
+        if type == "miss":
+            self.board[alpha][num]="O"
+        if type == "hit":
+            self.board[alpha][num]="*"
+        if type == "blank":
+            self.board[alpha][num]="_"
+        if type == "hit":
+            self.board[alpha][num]="X"
+        else:
+            pass
+
+    def getSpot(self,alpha,num):
+        return self.board[alpha][num]
